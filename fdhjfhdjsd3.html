@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+  <title>Cave of Eleven Sages</title>
+  <script src="/js/aes.js"></script>
+  <script src="/js/ctf.js"></script>
+  <script>
+    cipheredText = "U2FsdGVkX19biK+6qTFv29l8aFJws/NaSb/csy9zfhFMxONkmH2whaFG2ytch//7WA8yGCQGceWqqfx8P52hsDZ+/TVh3xTy1Q0CpswquJc=";
+  </script>
+  <style>
+    :root{
+      --dark: #343e3d;
+      --theme: #38e4ae;
+      --light: #ffffff;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body{
+      padding: 0;
+      margin: 0;
+      font-family: monospace, sans-serif;
+      text-align: center;
+      background: var(--dark);
+      color: var(--light);
+      font-size: 1rem;
+    }
+    header{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      background: var(--dark);
+      
+    }
+    header>h1{
+      font-size: 1.5rem;
+      color: var(--theme);
+    }
+    main{
+      display: inline-block;
+      width: min(100%,640px);
+      text-align: left;
+      margin: 80px 0;
+    }
+    main>img{
+      width: 100%;
+    }
+    footer{
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 10px;
+      background: var(--theme);
+      text-align: center;
+    }
+    form{
+      display: inline-grid;
+      width: min(100%,640px);
+      grid-template-columns: 1fr auto;
+      grid-gap: 10px;
+    }
+    input,input:focus,button{
+      border: 0;
+      margin: 0;
+      outline: none;
+      background: none;
+      border-bottom: 2px solid var(--dark);
+      color: var(--dark);
+      padding: 5px;
+      font-size: 1rem;
+      font-family: monospace, sans-serif;
+      width: 100%;
+    }
+    button{
+      background: var(--dark);
+      color: var(--light);
+      border: none;
+      padding: 5px 15px;
+      border-radius: 2px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cave of Eleven Sages</h1>
+  </header>
+  <br>
+  <main>
+    <p>
+      Finally ! ! ! done with the numbers.
+      <br><br>
+      It was lucky that you guys remembered the symbol for 'H' 
+      from the first room. Anyways... now you see the door 
+      to the third room lifting up ...you guys enter it. 
+      The the torches light up and you aint surprised anymore. 
+      The door closes with yet another sentence behind it, 
+      but the room is at least twice the size of previous one. 
+      There is a huge Table with vessels on it. 
+      Few filled with water..few half empty. You 
+      take a peek and see that everyone of them has a key in it with 
+      digits on them. There is a key hole on the next door.
+      <br><br>
+      But which one is the right one?  
+    </p>
+  </main>
+  <footer>
+    <form action="javascript:decrypt()">
+      <input type="text" id="passwordInput" placeholder="(password)" required>
+      <button type="submit">unlock</button>
+    </form>
+  </footer>
+</body>
+<html>  

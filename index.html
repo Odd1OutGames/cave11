@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+  <title>Cave of Eleven Sages</title>
+  <script src="/js/aes.js"></script>
+  <script src="/js/ctf.js"></script>
+  <script>
+    cipheredText = "U2FsdGVkX19biK+6qTFv29l8aFJws/NaSb/csy9zfhFMxONkmH2whaFG2ytch//7WA8yGCQGceWqqfx8P52hsDZ+/TVh3xTy1Q0CpswquJc=";
+  </script>
+  <style>
+    :root{
+      --dark: #343e3d;
+      --theme: #38e4ae;
+      --light: #ffffff;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body{
+      padding: 0;
+      margin: 0;
+      font-family: monospace, sans-serif;
+      text-align: center;
+      background: var(--dark);
+      color: var(--light);
+      font-size: 1rem;
+    }
+    header{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      background: var(--dark);
+      
+    }
+    header>h1{
+      font-size: 1.5rem;
+      color: var(--theme);
+    }
+    main{
+      display: inline-block;
+      width: min(100%,640px);
+      text-align: left;
+      margin: 80px 0;
+    }
+    main>img{
+      width: 100%;
+    }
+    footer{
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 10px;
+      background: var(--theme);
+      text-align: center;
+    }
+    form{
+      display: inline-grid;
+      width: min(100%,640px);
+      grid-template-columns: 1fr auto;
+      grid-gap: 10px;
+    }
+    input,input:focus,button{
+      border: 0;
+      margin: 0;
+      outline: none;
+      background: none;
+      border-bottom: 2px solid var(--dark);
+      color: var(--dark);
+      padding: 5px;
+      font-size: 1rem;
+      font-family: monospace, sans-serif;
+      width: 100%;
+    }
+    button{
+      background: var(--dark);
+      color: var(--light);
+      border: none;
+      padding: 5px 15px;
+      border-radius: 2px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cave of Eleven Sages</h1>
+  </header>
+  <br>
+  <main>
+    <p>
+      After almost ending up dead in "forest of no-will" trying to 
+      obtain the map to this cave.
+      <br><br>
+      You both finally make it to the "Cave of Eleven Sages", also known 
+      as the "Grave of Dollmeroth", 
+      a cave to a rumored ancient and forbidden magic which is awaiting to be 
+      unleashed by a worthy someone.
+      <br><br>
+      You find yourself standing at the mouth of the cave reading something 
+      which looks like a warning sign carved in to the caves front          
+      "some ancient symbols,
+      not understanding what it means you look confused about it.
+      <br><br>
+      You proceed further regardless, knowing that you have chosen to 
+      be here, knowing its dangerous. you have risked your life far too 
+      many times trying to find the map to this very cave,
+      for what? to be scared away by a warning sign?... No ,instead to 
+      reach the core of this cave before others do,
+      and obtain the legendary horn "The horn of Dollmeroth" sealed away 
+      by the eleven sages which once blown, ressaurects the very epidome of evil, the one who 
+      corrupts even time and space... "Dollmeroth" . but we dont know that, 
+      maybe a myth, regardeless you guys proceed.
+    </p>
+  </main>
+  <footer>
+    <form action="javascript:decrypt()">
+      <input type="text" id="passwordInput" placeholder="(password)" required>
+      <button type="submit">unlock</button>
+    </form>
+  </footer>
+</body>
+<html>  

@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+  <title>Cave of Eleven Sages</title>
+  <script src="/js/aes.js"></script>
+  <script src="/js/ctf.js"></script>
+  <script>
+    cipheredText = "U2FsdGVkX19biK+6qTFv29l8aFJws/NaSb/csy9zfhFMxONkmH2whaFG2ytch//7WA8yGCQGceWqqfx8P52hsDZ+/TVh3xTy1Q0CpswquJc=";
+  </script>
+  <style>
+    :root{
+      --dark: #343e3d;
+      --theme: #38e4ae;
+      --light: #ffffff;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body{
+      padding: 0;
+      margin: 0;
+      font-family: monospace, sans-serif;
+      text-align: center;
+      background: var(--dark);
+      color: var(--light);
+      font-size: 1rem;
+    }
+    header{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      background: var(--dark);
+      
+    }
+    header>h1{
+      font-size: 1.5rem;
+      color: var(--theme);
+    }
+    main{
+      display: inline-block;
+      width: min(100%,640px);
+      text-align: left;
+      margin: 80px 0;
+    }
+    main>img{
+      width: 100%;
+    }
+    footer{
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 10px;
+      background: var(--theme);
+      text-align: center;
+    }
+    form{
+      display: inline-grid;
+      width: min(100%,640px);
+      grid-template-columns: 1fr auto;
+      grid-gap: 10px;
+    }
+    input,input:focus,button{
+      border: 0;
+      margin: 0;
+      outline: none;
+      background: none;
+      border-bottom: 2px solid var(--dark);
+      color: var(--dark);
+      padding: 5px;
+      font-size: 1rem;
+      font-family: monospace, sans-serif;
+      width: 100%;
+    }
+    button{
+      background: var(--dark);
+      color: var(--light);
+      border: none;
+      padding: 5px 15px;
+      border-radius: 2px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cave of Eleven Sages</h1>
+  </header>
+  <br>
+  <main>
+    <p>
+      One of the sages must have known Sanskrit..."well it is one of 
+      the oldest languages to have existed..." ...regardless you pick 
+      up the keys in the empty vessels and try each to figure out the 
+      right one. The fourth door opens and you enter... the torches light 
+      up no surprise there but wait. Why isn't there any clue behind 
+      the door... You guys look around to understand what is happening... 
+      Soon realise that this time the quest is beneath your feet. 
+      A picture of our solar system, looks like we have an 
+      astrophysicist among the sages. On the fifth door you 
+      see a dial with numbers on it. Five sentences written above it.  
+    </p>
+  </main>
+  <footer>
+    <form action="javascript:decrypt()">
+      <input type="text" id="passwordInput" placeholder="(password)" required>
+      <button type="submit">unlock</button>
+    </form>
+  </footer>
+</body>
+<html>  
