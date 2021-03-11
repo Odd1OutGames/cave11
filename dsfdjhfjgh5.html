@@ -4,8 +4,10 @@
   <title>Cave of Eleven Sages</title>
   <script src="/js/aes.js"></script>
   <script src="/js/ctf.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <script>
-    cipheredText = "U2FsdGVkX19biK+6qTFv29l8aFJws/NaSb/csy9zfhFMxONkmH2whaFG2ytch//7WA8yGCQGceWqqfx8P52hsDZ+/TVh3xTy1Q0CpswquJc=";
+    cipheredText = "U2FsdGVkX18X4qkUMcro+dBz38uv+D17L1bOkJkBw83+18kpV2LjOnmWkSs61ACTfncrGySCL+xqfYA2LuiNbw==";
   </script>
   <style>
     :root{
@@ -44,6 +46,7 @@
       width: min(100%,640px);
       text-align: left;
       margin: 80px 0;
+      padding: 16px;
     }
     main>img{
       width: 100%;
@@ -86,10 +89,11 @@
 </head>
 <body>
   <header>
-    <h1>Cave of Eleven Sages</h1>
+    <h1>Room 5</h1>
   </header>
   <br>
   <main>
+    <img src="ref.png">
     <p>
       This time the door opens spirally...you like how fancy it looks... 
       to your surprise the quest this time is written on the exit door... 
@@ -98,10 +102,13 @@
       started getting a hang of the new language all the words seem 
       completely different. 
     </p>
+    <img src="m.png">
+    <br><br>    
+    <img src="ans.png">
   </main>
   <footer>
     <form action="javascript:decrypt()">
-      <input type="text" id="passwordInput" placeholder="(password)" required>
+      <input type="text" id="passwordInput" placeholder="(7-6-5)" autocomplete="off" required>
       <button type="submit">unlock</button>
     </form>
   </footer>

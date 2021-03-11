@@ -4,8 +4,10 @@
   <title>Cave of Eleven Sages</title>
   <script src="/js/aes.js"></script>
   <script src="/js/ctf.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <script>
-    cipheredText = "U2FsdGVkX19biK+6qTFv29l8aFJws/NaSb/csy9zfhFMxONkmH2whaFG2ytch//7WA8yGCQGceWqqfx8P52hsDZ+/TVh3xTy1Q0CpswquJc=";
+    cipheredText = "U2FsdGVkX1/SWGI+sM8/NrOHVe1sbgXjCgd1TQhWFPWmXKqxW32H8ob5ndAR5NXN5o5ndUtrimINsNkpepG4oA==";
   </script>
   <style>
     :root{
@@ -44,6 +46,7 @@
       width: min(100%,640px);
       text-align: left;
       margin: 80px 0;
+      padding: 16px;
     }
     main>img{
       width: 100%;
@@ -86,13 +89,13 @@
 </head>
 <body>
   <header>
-    <h1>Cave of Eleven Sages</h1>
+    <h1>Room 2</h1>
   </header>
   <br>
   <main>
     <p>
       That's right..why else do we have google..you quickly figure out 
-      the solution to the riddle and You see the wall go up as you 
+      the solution to the riddle and you see the wall go up as you 
       utter the word. You enter the second room and see the door 
       gets closed. You and your comrade take a deep breath and watch 
       the torches light up. In case you haven't noticed they are more 
@@ -103,7 +106,7 @@
       <br><br> 
       This time you see something like this.
       <br><br>
-      <img src="/2.jpg" style="width: 100%; height: auto;">
+      <img src="/dd2.png" style="width: 100%; height: auto;">
       <br><br>
       Seems like one of the sages was a mathematician.
       <br><br> 
@@ -115,7 +118,7 @@
   </main>
   <footer>
     <form action="javascript:decrypt()">
-      <input type="text" id="passwordInput" placeholder="(password)" required>
+      <input type="text" id="passwordInput" placeholder="(4)" autocomplete="off" required>
       <button type="submit">unlock</button>
     </form>
   </footer>

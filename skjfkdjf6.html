@@ -4,8 +4,10 @@
   <title>Cave of Eleven Sages</title>
   <script src="/js/aes.js"></script>
   <script src="/js/ctf.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <script>
-    cipheredText = "U2FsdGVkX19biK+6qTFv29l8aFJws/NaSb/csy9zfhFMxONkmH2whaFG2ytch//7WA8yGCQGceWqqfx8P52hsDZ+/TVh3xTy1Q0CpswquJc=";
+    cipheredText = "U2FsdGVkX19lWQL9a40FVjAMAZUDjH8v5MyhYiZbvxm78zbyVQAiNPPPA8EzuHN6Jiq88Jwd6wZBKx2GjO7FZw==";
   </script>
   <style>
     :root{
@@ -44,6 +46,7 @@
       width: min(100%,640px);
       text-align: left;
       margin: 80px 0;
+      padding: 16px;
     }
     main>img{
       width: 100%;
@@ -86,21 +89,22 @@
 </head>
 <body>
   <header>
-    <h1>Cave of Eleven Sages</h1>
+    <h1>Room 6</h1>
   </header>
   <br>
   <main>
     <p>
       That was crafty... mirrors and reflections...regardless the 
-      door that has just opened up leads ato a huge hall with a 
+      door that has just opened up leads to a huge hall with a 
       grand-grand infrastructure, and a box right in between...no key hole ...
-      seems like this one openes up with a spell too…there is some writing on 
+      seems like this one openes up with a spell too... there is some writing on 
       the box.
     </p>
+    <img src="sixer.png">
   </main>
   <footer>
     <form action="javascript:decrypt()">
-      <input type="text" id="passwordInput" placeholder="(password)" required>
+      <input type="text" id="passwordInput" placeholder="(5-2-5)" autocomplete="off" required>
       <button type="submit">unlock</button>
     </form>
   </footer>

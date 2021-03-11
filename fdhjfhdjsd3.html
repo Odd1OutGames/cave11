@@ -4,8 +4,10 @@
   <title>Cave of Eleven Sages</title>
   <script src="/js/aes.js"></script>
   <script src="/js/ctf.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <script>
-    cipheredText = "U2FsdGVkX19biK+6qTFv29l8aFJws/NaSb/csy9zfhFMxONkmH2whaFG2ytch//7WA8yGCQGceWqqfx8P52hsDZ+/TVh3xTy1Q0CpswquJc=";
+    cipheredText = "U2FsdGVkX18kspXs6t1OyNQL2cKt1Mws+TauNwL+owSCSXed/1fW70ORXTbsv/8n8HnZgO0Zq533Hdme37RdoQ==";
   </script>
   <style>
     :root{
@@ -44,6 +46,7 @@
       width: min(100%,640px);
       text-align: left;
       margin: 80px 0;
+      padding: 16px;
     }
     main>img{
       width: 100%;
@@ -86,13 +89,15 @@
 </head>
 <body>
   <header>
-    <h1>Cave of Eleven Sages</h1>
+    <h1>Room 3</h1>
   </header>
   <br>
   <main>
     <p>
       Finally ! ! ! done with the numbers.
-      <br><br>
+    </p>  
+    <img src="adhjal.png">
+    <p>
       It was lucky that you guys remembered the symbol for 'H' 
       from the first room. Anyways... now you see the door 
       to the third room lifting up ...you guys enter it. 
@@ -100,16 +105,22 @@
       The door closes with yet another sentence behind it, 
       but the room is at least twice the size of previous one. 
       There is a huge Table with vessels on it. 
-      Few filled with water..few half empty. You 
+      Few filled with water..few half empty, few empty. You 
       take a peek and see that everyone of them has a key in it with 
       digits on them. There is a key hole on the next door.
       <br><br>
+    </p>
+    <img src="halfv.png">
+    <p>  
+      <br><br>
       But which one is the right one?  
     </p>
+    <img src="tinder.png">
+    
   </main>
   <footer>
     <form action="javascript:decrypt()">
-      <input type="text" id="passwordInput" placeholder="(password)" required>
+      <input type="text" id="passwordInput" placeholder="(4)" autocomplete="off" required>
       <button type="submit">unlock</button>
     </form>
   </footer>

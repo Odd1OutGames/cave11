@@ -4,8 +4,10 @@
   <title>Cave of Eleven Sages</title>
   <script src="/js/aes.js"></script>
   <script src="/js/ctf.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <script>
-    cipheredText = "U2FsdGVkX19biK+6qTFv29l8aFJws/NaSb/csy9zfhFMxONkmH2whaFG2ytch//7WA8yGCQGceWqqfx8P52hsDZ+/TVh3xTy1Q0CpswquJc=";
+    cipheredText = "U2FsdGVkX18xiuCY4BdqKun3qxldJ1DSgrYrUt7JeUQRXOKoOvHoUPmW1xDazEeF4qVg5tqj9F1gzpXiyXYD6A==";
   </script>
   <style>
     :root{
@@ -44,6 +46,7 @@
       width: min(100%,640px);
       text-align: left;
       margin: 80px 0;
+      padding: 16px;
     }
     main>img{
       width: 100%;
@@ -86,7 +89,7 @@
 </head>
 <body>
   <header>
-    <h1>Cave of Eleven Sages</h1>
+    <h1>Room 1</h1>
   </header>
   <br>
   <main>
@@ -94,12 +97,18 @@
       You enter and see that the door behind you starts to close just 
       in the way it does in horror movies. You check your phone and 
       surprisingly the network seems stable. Once the door closes 
-      behind you the enchanted torches lights up… you see that the 
+      behind you the enchanted torches lights up... you see that the 
       back of the closed door has a carving on it. 
       <br><br>
-      <img src="/1.jpg" style="width: 100%; height: auto;">
+    </p>  
+    <img src="/key.png">
+    <p>
       <br><br>
-      And a sentence written underneath it. "Sentence One". You try to 
+      And a sentence written underneath it. 
+    </p>
+    <img src="/gh1.png">
+    <p>  
+      You try to 
       take a closer look at the cravings and suddenly the walls start 
       to close in ...but very slowly.. reminding you that the clock is 
       ticking. 
@@ -107,7 +116,7 @@
   </main>
   <footer>
     <form action="javascript:decrypt()">
-      <input type="text" id="passwordInput" placeholder="(password)" required>
+      <input type="text" id="passwordInput" placeholder="(8)" autocomplete="off" required>
       <button type="submit">unlock</button>
     </form>
   </footer>

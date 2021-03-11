@@ -4,8 +4,9 @@
   <title>Cave of Eleven Sages</title>
   <script src="/js/aes.js"></script>
   <script src="/js/ctf.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script>
-    cipheredText = "U2FsdGVkX19biK+6qTFv29l8aFJws/NaSb/csy9zfhFMxONkmH2whaFG2ytch//7WA8yGCQGceWqqfx8P52hsDZ+/TVh3xTy1Q0CpswquJc=";
+    cipheredText = "U2FsdGVkX18A3i0X2EcFV7u1UndGk5IxxDaynMaRVOWlkH3A0sK3VYKnfDVczCQXY9JkVVRmOZbc/1QNVuO4TSmvyyyaU5fC4fGOnrAoFS8=";
   </script>
   <style>
     :root{
@@ -44,6 +45,7 @@
       width: min(100%,640px);
       text-align: left;
       margin: 80px 0;
+      padding: 16px;
     }
     main>img{
       width: 100%;
@@ -101,8 +103,11 @@
       <br><br>
       You find yourself standing at the mouth of the cave reading something 
       which looks like a warning sign carved in to the caves front          
-      "some ancient symbols,
-      not understanding what it means you look confused about it.
+    </p>
+    <img src="/chant.png">
+    <p>  
+      Not understanding what it means you look confused about it.
+      
       <br><br>
       You proceed further regardless, knowing that you have chosen to 
       be here, knowing its dangerous. you have risked your life far too 
@@ -113,11 +118,13 @@
       by the eleven sages which once blown, ressaurects the very epidome of evil, the one who 
       corrupts even time and space... "Dollmeroth" . but we dont know that, 
       maybe a myth, regardeless you guys proceed.
+      <br><br>
+      Type "start" in the box below to proceed.
     </p>
   </main>
   <footer>
     <form action="javascript:decrypt()">
-      <input type="text" id="passwordInput" placeholder="(password)" required>
+      <input type="text" id="passwordInput" placeholder="(5)" autocomplete="off" required>
       <button type="submit">unlock</button>
     </form>
   </footer>
